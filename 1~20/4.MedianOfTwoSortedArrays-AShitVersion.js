@@ -1,6 +1,11 @@
 /**
+ * my code
  * 虽然代码和屎一样
+ * it looks like shit
  * 但是性能居然很好
+ * but performance well ...
+ * 想法是对的但是边界条件还能再简化下
+ * the idea is right but boundary conditions can be simplified
  */
 var findMedianSortedArrays = function(nums1, nums2) {
   let long = nums1.length >= nums2.length ? nums1 : nums2

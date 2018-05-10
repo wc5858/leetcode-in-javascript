@@ -1,6 +1,7 @@
 /**
  * 
  * 参考solution的版本
+ * a version convert solution's java to js
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number}
