@@ -16,13 +16,13 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-  let hash = {}
+  let map = {}
   for (let i = 0; i < nums.length; i++) {
     let key = nums[i]
-    let data = hash[target - key]
+    let data = map[target - key]
     if (data !== undefined) {
       return [data, i]
     }
-    hash[key] = i
+    map[key] = i
   }
 }
