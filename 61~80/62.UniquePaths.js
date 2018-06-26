@@ -40,6 +40,7 @@
     for (let i = 1; i < m; i++) {
       for (let j = 1; j < n; j++) {
         path[j] = path[j] + path[j - 1]
+        console.log(path)
       }
     }
     return path[n - 1]
