@@ -3,6 +3,8 @@
  * @param {number} maxWidth
  * @return {string[]}
  */
+// beat 97.83%
+// 逻辑还可以再简化一些
 var fullJustify = function(words, maxWidth) {
   let count = 0
   let width = 0
@@ -13,6 +15,7 @@ var fullJustify = function(words, maxWidth) {
       if (count !== 0) {
         let cur
         if (count === 1) {
+          // 一个单词占满一行的情况
           cur = words[i - 1]
           if (maxWidth - cur.length) {
             cur += ' '.repeat(maxWidth - cur.length)
@@ -38,6 +41,7 @@ var fullJustify = function(words, maxWidth) {
     }
   }
   if (count > 0) {
+    // 最后一行
     let s = words.length - count
     let cur = words[s]
     console.log(cur)
