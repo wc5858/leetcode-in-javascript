@@ -17,12 +17,10 @@ var addBinary = function(a, b) {
     i++
   }
   while (b.length - i >= 0 && carry != 0) {
-    console.log(res,carry,carry & b[b.length - i])
     res = (carry ^ b[b.length - i]) + res
     carry = carry & b[b.length - i]
     i++
   }
-  console.log(res)
   return (carry ? carry : b.substr(0, b.length - i + 1)) + res
 }
 // console.log(addBinary('1010', '1'))
