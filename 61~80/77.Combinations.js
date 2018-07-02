@@ -7,7 +7,6 @@ var combine = function(n, k) {
   if(!k) return []
   let ans = []
   function cb(pre,cur,rest) {
-    console.log(pre)
     if(!rest) {
       ans.push(pre.split('-').map(i=>+i))
       return
