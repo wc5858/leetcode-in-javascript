@@ -19,7 +19,7 @@ var biSearch = function(nums, s, e, t) {
     }
     return e
   }
-  let mid = middle(start, end)
+  let mid = middle(s, e)
   if (nums[mid] === t) {
     return mid
   }
