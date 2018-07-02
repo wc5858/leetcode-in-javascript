@@ -5,6 +5,8 @@ module.exports = function(func, testCases, check) {
       let checker = check || ((a, b) => a === b)
       if (!checker(ans, i.res, i)) {
         console.error('Wrong Answer:' + ans)
+      } else {
+        console.log('OK')
       }
     } catch (e) {
       console.log(e)
