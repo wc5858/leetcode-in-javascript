@@ -29,7 +29,7 @@
     }
     return max
   }
-  // 利用84的方法,稍微做了修改（尾0已手动添上）
+  // 利用84的方法
   var largestRectangleArea = function(heights) {
     const len = heights.length
     if (len === 0) {
