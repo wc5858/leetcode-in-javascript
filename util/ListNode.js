@@ -1,5 +1,7 @@
+let id = 0
 function ListNode(val) {
   this.val = val
+  this.id = id++
   this.next = null
 }
 module.exports = function(data) {
