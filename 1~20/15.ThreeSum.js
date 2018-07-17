@@ -4,7 +4,7 @@
  */
 {
   //  Time Limit Exceeded @ test case 311
-  var threeSum = function(nums) {
+  let threeSum = function(nums) {
     let set = new Set()
     let repeat = new Set()
     let countZero = 0
@@ -42,7 +42,7 @@
 }
 {
   // two pointer, O(n^2)
-  var threeSum = function(nums) {
+  let threeSum = function(nums) {
     if (nums.length < 3) return []
     let result = []
     // sort first

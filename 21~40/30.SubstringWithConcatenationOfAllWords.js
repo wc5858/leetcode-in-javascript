@@ -6,7 +6,7 @@
 {
   // 使用窗口滑动的方式实现，但似乎不是最优解，当首次匹配项较多时，处理比较冗余，会导致超时
   // 因此9~17行对数据进行了过滤
-  var findSubstring = function(s, words) {
+  let findSubstring = function(s, words) {
     if (!s || words.length == 0 || s.length < words.length) return []
     let set = new Set(words)
     let vals = [...set]
@@ -66,36 +66,36 @@
    * @param {string[]} words
    * @return {number[]}
    */
-  var findSubstring = function(s, words) {
+  let findSubstring = function(s, words) {
     // Sliding Window, Time: O((m + n) * wl), Space: O(m * wl), n = string length, m = dict size, wl = word length
     // travel all the words combinations to maintain a window
     // there are wl(word len) times travel, each time, n/wl words, mostly 2 times travel for each word
     // one left side of the window, the other right side of the window
     // so, time complexity O(wl * 2 * N/wl) = O(2N)
-    var ans = []
-    var n = s.length // n
-    var cnt = words.length // m
+    let ans = []
+    let n = s.length // n
+    let cnt = words.length // m
 
     if (n <= 0 || cnt <= 0) {
       return ans
     }
 
     // init word occurrence
-    var dict = new Map()
-    for (var i = 0; i < cnt; i++) {
+    let dict = new Map()
+    for (let i = 0; i < cnt; i++) {
       dict.set(words[i], dict.has(words[i]) ? dict.get(words[i]) + 1 : 1) // Space: O(m * wl)
     }
 
     // travel all sub string combinations
-    var wl = words[0].length
-    var left, count, tDict, str, str1
-    for (var i = 0; i < wl; i++) {
+    let wl = words[0].length
+    let left, count, tDict, str, str1
+    for (let i = 0; i < wl; i++) {
       // Time: O(wl)
       // 按偏移量遍历
       left = i
       count = 0
       tDict = new Map()
-      for (var j = i; j <= n - wl; j += wl) {
+      for (let j = i; j <= n - wl; j += wl) {
         // 按words长度分片，值得注意的是j递增时，tDict不一定重置
         // Time: O(n / wl)
         str = s.substr(j, wl) // Time: O(wl)
@@ -124,7 +124,7 @@
             count -= 1
             left += wl
           }
-          // not a valid word, reset all vars
+          // not a valid word, reset all lets
         } else {
           // 发现不匹配，左界限右移
           tDict = new Map()

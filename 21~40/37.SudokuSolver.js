@@ -1,4 +1,4 @@
-var createMatrix = function(x, y) {
+let createMatrix = function(x, y) {
   let arr = new Array(x)
   for (let i = 0; i < x; i++) {
     arr[i] = new Array(9)
@@ -9,7 +9,7 @@ var createMatrix = function(x, y) {
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
  */
-var solveSudoku = function(board) {
+let solveSudoku = function(board) {
   const horizontal = createMatrix(9, 9)
   const vertical = createMatrix(9, 9)
   const square = createMatrix(9, 9)

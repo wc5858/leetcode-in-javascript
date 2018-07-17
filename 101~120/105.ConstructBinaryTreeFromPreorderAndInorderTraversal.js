@@ -14,7 +14,7 @@ function TreeNode(val) {
   this.val = val;
   this.left = this.right = null;
 }
-var buildTree = function (preorder, inorder) {
+let buildTree = function (preorder, inorder) {
   if (preorder.length === 0) return null
   return (function buildTree(pLeft, pRight, iLeft, iRight) {
     let cur = preorder[pLeft]

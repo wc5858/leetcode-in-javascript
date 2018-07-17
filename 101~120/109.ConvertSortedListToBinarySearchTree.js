@@ -16,7 +16,7 @@
  * @param {ListNode} head
  * @return {TreeNode}
  */
-var sortedListToBST = function(head) {
+let sortedListToBST = function(head) {
   // 代价是O(n)的空间复杂度
   let arr = []
   while(head) {
@@ -25,7 +25,7 @@ var sortedListToBST = function(head) {
   }
   return sortedArrayToBST(arr)
 };
-var sortedArrayToBST = function (nums) {
+let sortedArrayToBST = function (nums) {
   return (function toTree(left, right) {
     if (left > right) return null
     let mid = Math.floor((left + right) / 2)

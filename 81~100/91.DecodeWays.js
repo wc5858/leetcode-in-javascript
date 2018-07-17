@@ -4,7 +4,7 @@
  */
 {
   // 我的解法，80ms
-  var numDecodings = function (s) {
+  let numDecodings = function (s) {
     let len = s.length
     if (len === 0 || s[0] === '0') {
       // 加上这个判断后减少到60ms
@@ -42,7 +42,7 @@
 
 
   let tester = require('../tester')
-  var testCases = [
+  let testCases = [
     {
       data: ['12'],
       res: 2,
@@ -85,12 +85,12 @@
 {
   // 56ms solution
   // 感觉和我用递归的思路是一样的，其实现方式值得学习
-  var numDecodings = function (s) {
+  let numDecodings = function (s) {
     if (s.length === 0 || s[0] === '0') {
       return 0;
     }
-    var c1 = 1, c2 = 1;
-    for (var i = 1; i < s.length; i++) {
+    let c1 = 1, c2 = 1;
+    for (let i = 1; i < s.length; i++) {
       if (s[i] === '0') {
         c2 = 0;
         // 这个判断可以提前终止一些循环，但是没有提升性能，说明这样的用例（有连续2个0）不多

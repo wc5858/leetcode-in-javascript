@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string}
  */
-var countAndSay = function(n) {
+let countAndSay = function(n) {
   let str = '1'
   for(let i=1;i<n;i++) {
     let temp = ''

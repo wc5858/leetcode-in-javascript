@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {string}
  */
-var longestPalindrome = function (s) {
+let longestPalindrome = function (s) {
   let longest = 1
   let len = 0
   let longestStr = s[0]

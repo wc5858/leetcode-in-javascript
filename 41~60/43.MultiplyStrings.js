@@ -5,7 +5,7 @@
  */
 {
   // 我的答案，分开处理位乘和加和，时间复杂度为O(n^2)，但运算比较冗余，性能较差
-  var multiplyDigit = function(num, digit) {
+  let multiplyDigit = function(num, digit) {
     let carry = 0
     let res = ''
     digit = +digit
@@ -16,7 +16,7 @@
     }
     return (carry || '') + res
   }
-  var add = function(num1, num2) {
+  let add = function(num1, num2) {
     // num1.length >= num2.length
     let carry = 0
     let res = ''
@@ -38,7 +38,7 @@
     }
     return (carry || '') + res
   }
-  var multiply = function(num1, num2) {
+  let multiply = function(num1, num2) {
     if (num1 === '0' || num2 === '0') return '0'
     let res = ''
     for (let i = 0; i < num2.length; i++) {
@@ -50,7 +50,7 @@
 }
 {
   // 改写高性能的答案，这边通过数组记录的方式同时进行乘法和加法运算，性能更好
-  var multiply = function(num1, num2) {
+  let multiply = function(num1, num2) {
     // need to check if one of number is 0;
     if (num1 === '0' || num2 === '0') return '0'
 

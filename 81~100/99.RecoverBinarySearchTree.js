@@ -1,11 +1,11 @@
-// var getMax = function (root) {
+// let getMax = function (root) {
 //   while (root.right) {
 //     root = root.right
 //   }
 //   return root.val
 // }
 
-// var getMin = function (root) {
+// let getMin = function (root) {
 //   while (root.left) {
 //     root = root.left
 //   }
@@ -22,7 +22,7 @@
 //  * @param {TreeNode} root
 //  * @return {void} Do not return anything, modify root in-place instead.
 //  */
-// var recoverTree = function (root) {
+// let recoverTree = function (root) {
 //   if (root === null) return
 //   if (root.left !== null && getMax(root.left) > root.val) {
 //     let child = root.left
@@ -73,7 +73,7 @@
 //   recoverTree(root.left)
 //   recoverTree(root.right)
 // };
-var recoverTree = function (root) {
+let recoverTree = function (root) {
   let node1, node2
   let prev = new TreeNode(-Infinity)
   traverse(root)

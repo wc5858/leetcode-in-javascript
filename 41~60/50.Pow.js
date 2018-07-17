@@ -3,7 +3,7 @@
  * @param {number} n
  * @return {number}
  */
-var myPow = function(x, n) {
+let myPow = function(x, n) {
   let flag = n < 0
   let res = 1
   n = Math.abs(n)

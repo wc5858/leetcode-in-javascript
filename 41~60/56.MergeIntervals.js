@@ -9,7 +9,7 @@
  * @param {Interval[]} intervals
  * @return {Interval[]}
  */
-var merge = function(intervals) {
+let merge = function(intervals) {
   intervals.sort((a, b) => a.start - b.start || a.end - b.end)
   let i = 0
   while (i < intervals.length - 1) {

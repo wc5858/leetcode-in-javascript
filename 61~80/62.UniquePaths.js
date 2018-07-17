@@ -5,7 +5,7 @@
  */
 {
   // my answer
-  var uniquePaths = function(m, n) {
+  let uniquePaths = function(m, n) {
     let cache = new Map()
     let subFunc = (m, n) => {
       if (m === 1 || n === 1) return 1

@@ -5,7 +5,7 @@
 // 使用排列组合的方式来处理，避免递归操作
 // 以n=3为例，相当于把两个右括号插入(*(*(*)的三个位置中，要求第一个位置的括号数不能超过1
 // n大于3时，插入限制的计算会稍复杂些，具体表现为27行k的限制条件
-var generateParenthesis = function(n) {
+let generateParenthesis = function(n) {
   if (n == 1) return ['()']
   let data = [
     {

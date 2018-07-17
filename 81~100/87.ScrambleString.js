@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 // 方法是对的，不过超时了
-// var isScramble = function(s1, s2) {
+// let isScramble = function(s1, s2) {
 //   let len = s1.length
 //   if (len < 2) {
 //     return s1 === s2
@@ -26,7 +26,7 @@
 // }
 // 加个缓存
 // 性能还是不够好（160ms），猜测是截取字符串太花时间了
-// var isScramble = function(s1, s2) {
+// let isScramble = function(s1, s2) {
 //   let cache = {}
 //   const isScramble = (s1, s2) => {
 //     let tag = s1 + '&' + s2
@@ -55,7 +55,7 @@
 //   return isScramble(s1, s2)
 // };
 // // 用坐标的方式处理（148ms）改进不明显
-// var isScramble = function(s1, s2) {
+// let isScramble = function(s1, s2) {
 //   let cache = {}
 //   const isScramble = (x1, x2, y1, y2) => {
 //     let tag = x1 + '-' + x2 + '-' + y1 + '-' + y2
@@ -84,7 +84,7 @@
 // 不过那个人用了substr且没有做缓存，性能也不好）
 // 72ms! beat100%
 // 开心~
-var isScramble = function(s1, s2) {
+let isScramble = function(s1, s2) {
   let cache = {}
   const isScramble = (x1, x2, y1, y2) => {
     let tag = x1 + '-' + x2 + '-' + y1 + '-' + y2
@@ -120,7 +120,7 @@ var isScramble = function(s1, s2) {
   return isScramble(0, s1.length, 0, s2.length)
 }
 let tester = require('../tester')
-var testCases = [
+let testCases = [
   {
     data: ['great', 'regat'],
     res: true,

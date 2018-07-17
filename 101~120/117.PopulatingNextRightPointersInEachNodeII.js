@@ -10,8 +10,8 @@
  * @param {TreeLinkNode} root
  * @return {void} Do not return anything, modify tree in-place instead.
  */
-var connect = function (root) {
-  var cur = root, pre = root;
+let connect = function (root) {
+  let cur = root, pre = root;
   while (pre) {
     cur = pre
     let last = null

@@ -3,7 +3,7 @@
  * @param {string} word
  * @return {boolean}
  */
-var exist = function(board, word) {
+let exist = function(board, word) {
   function testChar(index, i, j) {
     if (board[i][j] === word[index]) {
       let temp = board[i][j]
@@ -38,7 +38,7 @@ var exist = function(board, word) {
 }
 
 let tester = require('../tester')
-var testCases = [
+let testCases = [
   {
     data: [[['A', 'B', 'C', 'E'], ['S', 'F', 'C', 'S'], ['A', 'D', 'E', 'E']], 'ABCCED'],
     res: true,

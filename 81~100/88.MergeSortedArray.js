@@ -5,7 +5,7 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
-// var merge = function(nums1, m, nums2, n) {
+// let merge = function(nums1, m, nums2, n) {
 //   let index = m + n - 1
 //   let i = m - 1,
 //     j = n - 1
@@ -21,7 +21,7 @@
 //   }
 // };
 // 简（zhuang）洁（bi）版
-var merge = function(nums1, m, nums2, n) {
+let merge = function(nums1, m, nums2, n) {
   let index = m + n - 1,
     i = m - 1,
     j = n - 1

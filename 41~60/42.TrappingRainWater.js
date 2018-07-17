@@ -1,5 +1,5 @@
 // 这个方法的时间复杂度为O(n^2)，最后几个case过不去
-var trap = function(height) {
+let trap = function(height) {
   if (height.length === 0) return 0
   let flag = true
   let deep = 1
@@ -25,7 +25,7 @@ var trap = function(height) {
   return result
 }
 // 双指针，O(n)
-var trap = function(height) {
+let trap = function(height) {
   let left = 0,
     right = height.length,
     res = 0,

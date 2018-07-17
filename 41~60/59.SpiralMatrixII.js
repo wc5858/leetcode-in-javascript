@@ -1,11 +1,11 @@
-var generateMatrix = function(n) {
+let generateMatrix = function(n) {
   let matrix = [],
     i = 0,
     j = 0,
     dir = 0,
     limit = [0, 0, n - 1, n - 1],
     k = n * n
-  for (var m = 1; m <= k; m++) {
+  for (let m = 1; m <= k; m++) {
     if (!matrix[i]) {
       matrix[i] = new Array(n)
     }

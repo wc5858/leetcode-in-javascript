@@ -114,7 +114,7 @@ let print = function(board) {
     console.log(l)
   }
 }
-var dealBranch = function(board, count, sets) {
+let dealBranch = function(board, count, sets) {
   // 利用size为1的集合，能进行很大程度上的简化
   let flag = true
   while (count > 0 && flag) {
@@ -130,7 +130,7 @@ var dealBranch = function(board, count, sets) {
   }
   return count
 }
-var solveSudoku = function(board) {
+let solveSudoku = function(board) {
   // 分析已占用数据
   let data = {}
   for (let i = 0; i < 9; i++) {

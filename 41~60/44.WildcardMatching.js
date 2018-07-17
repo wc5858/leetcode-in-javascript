@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 // 思路是对的，但是p回退的时候i也要回退，而且只需要回退一步即可
-// var isMatch = function(s, p) {
+// let isMatch = function(s, p) {
 //   if (p.length === 0) return s.length === 0
 //   let stack = []
 //   let j = 0
@@ -45,7 +45,7 @@
 //   console.log(i, j,p.length)
 //   return stack.length > 0 ? j === p.length - 1 : j === p.length
 // }
-var isMatch = function(s, p) {
+let isMatch = function(s, p) {
   let i = 0,
     j = 0,
     match = 0,

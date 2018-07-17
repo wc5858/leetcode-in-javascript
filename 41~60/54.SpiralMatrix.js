@@ -2,7 +2,7 @@
  * @param {number[][]} matrix
  * @return {number[]}
  */
-var spiralOrder = function(matrix) {
+let spiralOrder = function(matrix) {
   let y = matrix.length
   if (y === 0) return []
   if (y === 1) return matrix[0]

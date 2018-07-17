@@ -4,7 +4,7 @@
  * @return {string}
  */
 // 这个算法只能求解t没有重复字母的情况
-// var minWindow = function(s, t) {
+// let minWindow = function(s, t) {
 //   let set = new Set(t)
 //   let found = new Set()
 //   let queue = []
@@ -69,7 +69,7 @@
 //   }
 // }
 // 其他人的解法，稍微改写了下
-var minWindow = function(s, t) {
+let minWindow = function(s, t) {
   let map = new Array(128).fill(0)
   for (let i = 0; i < t.length; i++) {
     map[t.charCodeAt(i)]++
@@ -104,7 +104,7 @@ var minWindow = function(s, t) {
 }
 
 let tester = require('../tester')
-var testCases = [
+let testCases = [
   {
     data: ['ADOBECODEBANC', 'ABC'],
     res: 'BANC',

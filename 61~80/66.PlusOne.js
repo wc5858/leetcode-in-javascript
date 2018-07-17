@@ -2,7 +2,7 @@
  * @param {number[]} digits
  * @return {number[]}
  */
-var plusOne = function(digits) {
+let plusOne = function(digits) {
   let index = digits.length - 1
   while (digits[index] == 9) {
     digits[index] = 0

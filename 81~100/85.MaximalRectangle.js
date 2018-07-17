@@ -4,7 +4,7 @@
  */
 {
   // 按列切割法
-  var maximalRectangle = function(matrix) {
+  let maximalRectangle = function(matrix) {
     let rows = matrix.length
     if (!rows) return 0
     let cols = matrix[0].length
@@ -30,7 +30,7 @@
     return max
   }
   // 利用84的方法
-  var largestRectangleArea = function(heights) {
+  let largestRectangleArea = function(heights) {
     const len = heights.length
     if (len === 0) {
       return 0

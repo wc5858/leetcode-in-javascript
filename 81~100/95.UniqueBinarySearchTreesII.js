@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-// var numTrees = function (n) {
+// let numTrees = function (n) {
 //   let cache = []
 //   function numTrees(n) {
 //     if (n < 3) {
@@ -25,7 +25,7 @@ function TreeNode(val) {
   this.left = this.right = null;
 }
 
-var generateTrees = function (n) {
+let generateTrees = function (n) {
   if (n === 0) return []
   function tree(n, start) {
     if (n < 2) {
@@ -52,7 +52,7 @@ var generateTrees = function (n) {
   return tree(n, 1)
 };
 // leetcode自己会做解析，不必要了
-// var traversing = function(tree) {
+// let traversing = function(tree) {
 //   let ans = []
 //   let queue = [tree]
 //   while(queue.length > 0) {

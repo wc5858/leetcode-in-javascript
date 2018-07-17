@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {boolean}
  */
-var searchMatrix = function(matrix, target) {
+let searchMatrix = function(matrix, target) {
   let i = 0
   // 查找行的过程也可以用二分查找优化
   while (i < matrix.length && matrix[i][0] <= target) {
@@ -18,10 +18,10 @@ var searchMatrix = function(matrix, target) {
     biSearch(matrix[i - 1], 0, matrix[0].length - 1, target)
   )
 }
-var middle = function(i, j) {
+let middle = function(i, j) {
   return i + Math.floor((j - i) / 2)
 }
-var biSearch = function(nums, s, e, t) {
+let biSearch = function(nums, s, e, t) {
   if (s === e - 1) {
     return nums[s] === t || nums[e] === t
   }
@@ -32,7 +32,7 @@ var biSearch = function(nums, s, e, t) {
   return nums[mid] > t ? biSearch(nums, s, mid, t) : biSearch(nums, mid, e, t)
 }
 let tester = require('../tester')
-var testCases = [
+let testCases = [
   {
     data: [[], 0],
     res: false,

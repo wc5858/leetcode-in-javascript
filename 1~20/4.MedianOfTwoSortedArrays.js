@@ -6,7 +6,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function(nums1, nums2) {
+let findMedianSortedArrays = function(nums1, nums2) {
   let n = nums1.length
   let m = nums2.length
   if (n < m) return findMedianSortedArrays(nums2, nums1)

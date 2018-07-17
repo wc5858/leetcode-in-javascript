@@ -3,7 +3,7 @@
  * @param {string} b
  * @return {string}
  */
-var addBinary = function(a, b) {
+let addBinary = function(a, b) {
   let m = a.length,
     n = b.length
   if (m > n) return addBinary(b, a)

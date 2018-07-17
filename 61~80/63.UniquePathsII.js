@@ -4,7 +4,7 @@
  */
 {
   // 我的这种实现一来比较复杂，二则改变了传入的引用类型，不是很好的解决方案
-  var uniquePathsWithObstacles = function(obstacleGrid) {
+  let uniquePathsWithObstacles = function(obstacleGrid) {
     const m = obstacleGrid.length
     const n = obstacleGrid[0].length
     if (!m || !n) return 0
@@ -28,7 +28,7 @@
 }
 // better code
 {
-  var uniquePathsWithObstacles = function(obstacleGrid) {
+  let uniquePathsWithObstacles = function(obstacleGrid) {
     const m = obstacleGrid.length,
       n = obstacleGrid[0].length
     const paths = new Array(m).fill(0)

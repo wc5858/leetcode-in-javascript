@@ -1,4 +1,4 @@
-var middle = function(i, j) {
+let middle = function(i, j) {
   return i + Math.floor((j - i) / 2)
 }
 /**
@@ -6,12 +6,12 @@ var middle = function(i, j) {
  * @param {number} target
  * @return {number}
  */
-var search = function(nums, target) {
+let search = function(nums, target) {
   if (nums.length === 0) return -1
   if (nums.length === 1) return nums[0] === target ? 0 : -1
   return biSearch(nums, 0, nums.length - 1, target)
 }
-var biSearch = function(nums, start, end, target) {
+let biSearch = function(nums, start, end, target) {
   
   if (start === end - 1) {
     return nums[end] === target ? end : nums[start] === target ? start : -1

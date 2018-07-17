@@ -10,7 +10,7 @@
  * @param {number} sum
  * @return {boolean}
  */
-var hasPathSum = function (root, sum) {
+let hasPathSum = function (root, sum) {
   if (root === null) return false
   if (root.left === null && root.right === null) return root.val === sum
   if (root.left === null) return hasPathSum(root.right, sum - root.val)

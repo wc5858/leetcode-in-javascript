@@ -10,7 +10,7 @@
  * @return {ListNode}
  */
 {
-  var mergeKLists = function(lists) {
+  let mergeKLists = function(lists) {
     let res = lists
     while (res.length > 1) {
       let temp = []
@@ -37,7 +37,7 @@
   }
 }
 {
-  var mergeTwoLists = function(l1, l2) {
+  let mergeTwoLists = function(l1, l2) {
     if (l1 == null) return l2
     if (l2 == null) return l1
     let cur1 = l1

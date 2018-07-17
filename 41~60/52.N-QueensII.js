@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var totalNQueens = function(n) {
+let totalNQueens = function(n) {
   let res = 0
   let pos = new Array(n)
 

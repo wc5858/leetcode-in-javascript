@@ -11,7 +11,7 @@
  */
 {
   // 标志层级
-  var levelOrder = function (root) {
+  let levelOrder = function (root) {
     if (root === null) return []
     let queue = [{
       node: root,
@@ -44,7 +44,7 @@
 {
   // 计数法
   // 性能没啥区别
-  var levelOrder = function (root) {
+  let levelOrder = function (root) {
     if (root === null) return []
     let queue = [root]
     let ans = []

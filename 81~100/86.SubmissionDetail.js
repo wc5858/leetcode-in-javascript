@@ -15,7 +15,7 @@ function ListNode(val) {
  * @return {ListNode}
  */
 
-var partition = function(head, x) {
+let partition = function(head, x) {
   if (!head) return null
   let p = new ListNode()
   p.next = head

@@ -7,7 +7,7 @@
   // a version can show the pattern
   // I misunderstood and thought it is needed to output like this
   // space replaced with '*' for better reading
-  var convert = function(s, numRows) {
+  let convert = function(s, numRows) {
     let groupLen = numRows * 2 - 2
     if (groupLen == 0) return s
     let extraLen =
@@ -38,7 +38,7 @@
 {
   // then I improved it
   // this solution "beats 100.00 % of javascript submissions" (happy~)
-  var convertB = function(s, numRows) {
+  let convertB = function(s, numRows) {
     if (numRows == 1) return s
     let groupLen = numRows * 2 - 2
     let result = ''

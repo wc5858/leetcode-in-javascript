@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number[][]}
  */
-var combine = function(n, k) {
+let combine = function(n, k) {
   if(!k) return []
   let ans = []
   function cb(pre,cur,rest) {

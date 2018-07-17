@@ -13,7 +13,7 @@
 // beat 99%
 // 不过测试用例中intervals长度比较小，用binary search比较冗余；
 // 如果intervals中数据量较大，则可考虑用binary search改进查找部分的算法
-var insert = function(intervals, newInterval) {
+let insert = function(intervals, newInterval) {
   let len = intervals.length
 
   let i = 0

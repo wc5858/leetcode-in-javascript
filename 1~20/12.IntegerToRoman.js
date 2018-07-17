@@ -1,4 +1,4 @@
-var intToRoman = function (num) {
+let intToRoman = function (num) {
   let result = ''
   let nums = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
   let count = 1

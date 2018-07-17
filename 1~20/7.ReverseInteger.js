@@ -3,7 +3,7 @@
  * @return {number}
  */
 // Okay, I'm lazy
-var reverse = function (x) {
+let reverse = function (x) {
   let arr = [...x.toString()]
   let res
   if (x >= 0) {

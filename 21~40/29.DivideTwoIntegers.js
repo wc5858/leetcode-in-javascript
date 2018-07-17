@@ -5,7 +5,7 @@
  */
 // 注意要用无符号右移>>>
 // 由于题设对输入数值的范围限制，判断输出是否溢出只须考虑divisor为正负1的情况
-var divide = function(dividend, divisor) {
+let divide = function(dividend, divisor) {
   let range = Math.pow(2, 31)
   let ans = 0
   if (divisor === 1) {

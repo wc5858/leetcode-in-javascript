@@ -15,7 +15,7 @@ function ListNode(val) {
  * @param {number} n
  * @return {ListNode}
  */
-var reverseBetween = function (head, m, n) {
+let reverseBetween = function (head, m, n) {
   if (head === null || head.next === null) return head
   let p = new ListNode()
   p.next = head

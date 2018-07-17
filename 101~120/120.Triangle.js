@@ -4,7 +4,7 @@
  */
 // O(1)
 // 这个更简洁一点
-// var minimumTotal = function (triangle) {
+// let minimumTotal = function (triangle) {
 //   for (let i = 1; i < triangle.length; i++) {
 //     triangle[i][0] += triangle[i - 1][0]
 //     triangle[i][i] += triangle[i - 1][i - 1]
@@ -17,7 +17,7 @@
 // 最后一行手动比较
 // 这样子操作的缺陷是修改了原来的数据
 // O(n)的额外空间其实也是一样的思路，类似119题，每次在末尾添一个0然后去求和
-var minimumTotal = function (triangle) {
+let minimumTotal = function (triangle) {
   let n = triangle.length
   if (n === 1) return triangle[0][0]
   let min
@@ -38,7 +38,7 @@ var minimumTotal = function (triangle) {
 };
 
 let tester = require('../tester')
-var testCases = [
+let testCases = [
   {
     data: [[
       [2],

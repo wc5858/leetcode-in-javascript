@@ -10,7 +10,7 @@
  * @param {number} sum
  * @return {number[][]}
  */
-var pathSum = function (root, sum) {
+let pathSum = function (root, sum) {
   let ans = []
   let path = [];
   (function helper(root, sum) {

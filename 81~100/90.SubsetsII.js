@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var subsetsWithDup = function (nums) {
+let subsetsWithDup = function (nums) {
   let set = new Set()
   let n = nums.length
   nums.sort((a, b) => a - b)

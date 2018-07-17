@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var canJump = function(nums) {
+let canJump = function(nums) {
   let next = 0
   for (let i = 0; i < nums.length - 1; i++) {
     // 标记后面最远能到的点

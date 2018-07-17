@@ -3,7 +3,7 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 {
-  var setZeroes = function(matrix) {
+  let setZeroes = function(matrix) {
     let stack = []
     for (let i = 0; i < matrix.length; i++) {
       let lineZero = false
@@ -30,7 +30,7 @@
 // 这里有给更巧妙的解法：用首行和首列来记录状态
 // https://leetcode.com/problems/set-matrix-zeroes/discuss/26014/Any-shorter-O(1)-space-solution
 {
-  var setZeroes = function(matrix) {
+  let setZeroes = function(matrix) {
     let col0 = 1,
       rows = matrix.length,
       cols = matrix[0].length

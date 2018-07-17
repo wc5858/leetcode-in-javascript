@@ -12,7 +12,7 @@
  */
 {
   // my solution
-  var removeNthFromEnd = function(head, n) {
+  let removeNthFromEnd = function(head, n) {
     if (head === null || head.next === null) return null
     let arr = []
     let cur = head
@@ -31,7 +31,7 @@
 }
 {
   // a smarter solution
-  var removeNthFromEnd = function(head, n) {
+  let removeNthFromEnd = function(head, n) {
     if (head.next === null || head === null) return null
     // add a dummy to make the logic more simple
     const dummy = new ListNode(0)

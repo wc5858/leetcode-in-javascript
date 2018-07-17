@@ -99,7 +99,7 @@ let data = {
  * @param {string} s
  * @return {string[]}
  */
-var restoreIpAddresses = function (s) {
+let restoreIpAddresses = function (s) {
   let len = s.length
   if (len < 4 || len > 12) return []
   let ans = []
@@ -125,7 +125,7 @@ var restoreIpAddresses = function (s) {
   }
   return ans
 };
-var checkUnit = function (s) {
+let checkUnit = function (s) {
   let num = +s
   return !(num > 255 || num === 0 && s.length > 1 || s[0] === '0' && num > 0)
 }

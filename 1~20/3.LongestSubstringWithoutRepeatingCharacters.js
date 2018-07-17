@@ -5,7 +5,7 @@
 {
   // 直接利用indexOf和字符串剪裁似乎性能更好，不过思路似乎是一样的
   // my solution use a hashmap, idea is right but using string directly is faster
-  var lengthOfLongestSubstring = function(s) {
+  let lengthOfLongestSubstring = function(s) {
     let hash = {}
     let lastLen = 0
     let curLen = 0
@@ -28,7 +28,7 @@
 {
   // 最高分的解答，可以看到思路是一样的= =
   // copied from fastest solution
-  var lengthOfLongestSubstring = function(s) {
+  let lengthOfLongestSubstring = function(s) {
     if (s === null) {
       return 0
     }

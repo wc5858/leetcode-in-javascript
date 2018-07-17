@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {
+let isValid = function(s) {
   let stack = []
   let check = function(val) {
     let out = stack.pop()

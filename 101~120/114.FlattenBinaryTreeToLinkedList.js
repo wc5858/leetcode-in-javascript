@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
  */
-var flatten = function(root) {
+let flatten = function(root) {
   if(root === null) return
   function helper(root) {
     let leftIsNull = root.left === null

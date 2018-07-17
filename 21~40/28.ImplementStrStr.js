@@ -4,6 +4,6 @@
  * @return {number}
  */
 // lazy~~
-var strStr = function(haystack, needle) {
+let strStr = function(haystack, needle) {
   return haystack.indexOf(needle)
 };

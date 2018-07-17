@@ -4,7 +4,7 @@
  */
 {
   // my answer,beat 100%,O(n)
-  var jump = function(nums) {
+  let jump = function(nums) {
     let index = 0
     let step = 0
     while (true) {
@@ -31,7 +31,7 @@
 {
   // other's answer,beat 100%,O(n),but more simple
   // 本质上和我的方法是等效的，形式上更简化
-  var jump = function(nums) {
+  let jump = function(nums) {
     let steps = 0
     let next = 0
     let pred = 0

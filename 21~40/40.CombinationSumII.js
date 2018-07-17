@@ -1,8 +1,8 @@
 // 递归解法，通过字符串记录路径 beat 91%
-var combinationSum2 = function(candidates, target) {
+let combinationSum2 = function(candidates, target) {
   let set = new Set()
   candidates.sort((a,b)=>a-b)
-  var search = function(start, target, route) {
+  let search = function(start, target, route) {
     for (let i = start; i < candidates.length; i++) {
       if (candidates[i] === target) {
         set.add(route + candidates[i])

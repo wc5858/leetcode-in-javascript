@@ -7,7 +7,7 @@
  * 想法是对的但是边界条件还能再简化下
  * the idea is right but boundary conditions can be simplified
  */
-var findMedianSortedArrays = function(nums1, nums2) {
+let findMedianSortedArrays = function(nums1, nums2) {
   let long = nums1.length >= nums2.length ? nums1 : nums2
   let short = nums1.length < nums2.length ? nums1 : nums2
   let cursor1 = Math.floor((long.length - 1) / 2)

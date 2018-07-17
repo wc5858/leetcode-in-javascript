@@ -1,5 +1,5 @@
 {
-  var isPalindrome = function(x) {
+  let isPalindrome = function(x) {
     if (typeof x !== 'string') x = x.toString()
     let len = x.length
     if (len <= 1) return true
@@ -8,7 +8,7 @@
 }
 {
   // solution's way
-  var isPalindrome = function(x) {
+  let isPalindrome = function(x) {
     if (x < 0 || (x % 10 == 0 && x != 0)) {
       return false
     }

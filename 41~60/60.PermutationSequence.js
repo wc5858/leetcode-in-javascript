@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {string}
  */
-var getPermutation = function(n, k) {
+let getPermutation = function(n, k) {
   let res = ''
   let block = 1
   let arr = []

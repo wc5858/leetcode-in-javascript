@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {string[][]}
  */
-var solveNQueens = function(n) {
+let solveNQueens = function(n) {
   let res = []
   let pos = new Array(n)
 

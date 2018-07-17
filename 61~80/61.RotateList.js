@@ -10,7 +10,7 @@
  * @param {number} k
  * @return {ListNode}
  */
-var rotateRight = function(head, k) {
+let rotateRight = function(head, k) {
   if (!head) return null
   let cur = head
   let len = 1

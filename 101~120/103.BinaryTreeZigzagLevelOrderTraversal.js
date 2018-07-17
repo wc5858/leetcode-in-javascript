@@ -1,5 +1,5 @@
 
-var zigzagLevelOrder = function (root) {
+let zigzagLevelOrder = function (root) {
   if (root === null) return []
   let queue = [root]
   let ans = []

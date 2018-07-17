@@ -6,7 +6,7 @@ let tester = require('../tester')
  */
 // 想叉了
 // 我以为这个问题等效为找两个串中，顺序相同但不一定连续的字符序列，但似乎反而把问题复杂化了
-// var minDistance = function(word1, word2) {
+// let minDistance = function(word1, word2) {
 //   let map = new Map()
 //   for (let j = 0; j < word2.length; j++) {
 //     if (map.has(word2[j])) {
@@ -44,7 +44,7 @@ let tester = require('../tester')
 // }
 // 其他人的解法
 // https://www.dreamxu.com/books/dsa/dp/edit-distance.html这里有讲解
-var minDistance = function(word1, word2) {
+let minDistance = function(word1, word2) {
   let m = word1.length
   let n = word2.length
   let dp = []
@@ -66,7 +66,7 @@ var minDistance = function(word1, word2) {
   }
   return dp[n]
 }
-var testCases = [
+let testCases = [
   {
     data: ['horse', 'ros'],
     res: 3,

@@ -9,7 +9,7 @@
   //（理论上为O(n^2)，实际上稍微小一点，Math.min(num, i)优化是起了作用的）
   let count = 0
   // count用于测试时间复杂度
-  var climbStairs = function(n) {
+  let climbStairs = function(n) {
     let num,
       ans = 0,
       combination = (total, num) => {
@@ -46,7 +46,7 @@
   let count = 0
   // 其他人的答案
   // 动态规划
-  var climbStairs = function(n) {
+  let climbStairs = function(n) {
     let a = 1
     let b = 1
 

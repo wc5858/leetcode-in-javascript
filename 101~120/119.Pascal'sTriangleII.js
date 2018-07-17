@@ -2,7 +2,7 @@
  * @param {number} rowIndex
  * @return {number[]}
  */
-// var getRow = function (rowIndex) {
+// let getRow = function (rowIndex) {
 //   let ans = [1]
 //   for (let i = 1; i <= rowIndex; i++) {
 //     ans.unshift(1)
@@ -13,7 +13,7 @@
 //   return ans
 // };
 // 用push从后往前操作比用unshift好很多，想必极有可能是因为unshift移动数组的开销
-var getRow = function (rowIndex) {
+let getRow = function (rowIndex) {
   let ans = [1]
   for (let i = 1; i <= rowIndex; i++) {
     ans.push(1)

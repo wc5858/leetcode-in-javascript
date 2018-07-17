@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var romanToInt = function (s) {
+let romanToInt = function (s) {
   let nums = {
     I: 1,
     V: 5,

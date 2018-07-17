@@ -2,7 +2,7 @@
  * @param {string} digits
  * @return {string[]}
  */
-var letterCombinations = function(digits) {
+let letterCombinations = function(digits) {
   let result = []
   let temp = []
   for (let i = 0; i < digits.length; i++) {

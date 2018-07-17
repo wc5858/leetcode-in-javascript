@@ -5,7 +5,7 @@
  * @return {boolean}
  */
 {
-  var isInterleave = function (s1, s2, s3) {
+  let isInterleave = function (s1, s2, s3) {
     let cache = {}
     function isInterleave(i, j) {
       let flag = i + '-' + j
@@ -33,7 +33,7 @@
   };
 
   let tester = require('../tester')
-  var testCases = [
+  let testCases = [
     {
       data: ['aabcc', 'dbbca', 'aadbbcbcac'],
       res: true,
@@ -59,7 +59,7 @@
   // 1.避免使用递归
   // 2.锻炼思维（雾）
   // 总结，在写之前一些题目的过程中发现，能用递归+缓存做的很多题目也都可以用动态规划解
-  var isInterleave = function (s1, s2, s3) {
+  let isInterleave = function (s1, s2, s3) {
     if (s1 === '') return s2 === s3
     if (s2 === '') return s1 === s3
     if (s3.length !== s1.length + s2.length) return false
@@ -85,7 +85,7 @@
   };
 
   let tester = require('../tester')
-  var testCases = [
+  let testCases = [
     {
       data: ['aabcc', 'dbbca', 'aadbbcbcac'],
       res: true,

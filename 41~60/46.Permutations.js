@@ -1,4 +1,4 @@
-var permute = function(nums) {
+let permute = function(nums) {
   if (nums.length === 1) return [nums]
   const res = []
   function p(arr, data) {

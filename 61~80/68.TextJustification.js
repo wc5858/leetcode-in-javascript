@@ -5,7 +5,7 @@
  */
 // beat 97.83%
 // 逻辑还可以再简化一些
-var fullJustify = function(words, maxWidth) {
+let fullJustify = function(words, maxWidth) {
   let count = 0
   let width = 0
   let res = []

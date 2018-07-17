@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-var numTrees = function (n) {
+let numTrees = function (n) {
   let cache = []
   function numTrees(n) {
     if (n < 3) {
@@ -21,7 +21,7 @@ var numTrees = function (n) {
 };
 
 let tester = require('../tester')
-var testCases = [
+let testCases = [
   {
     data: [4],
     res: 14,

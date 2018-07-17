@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var mySqrt = function(x) {
+let mySqrt = function(x) {
   let isAns = num => num * num <= x && ++num * num > x
   let num = Math.floor(x / 2),
     left = 0,

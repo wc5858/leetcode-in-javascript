@@ -1,10 +1,10 @@
 {
   // 在33题基础上打补丁的版本
   // it looks terrible
-  var middle = function(i, j) {
+  let middle = function(i, j) {
     return i + Math.floor((j - i) / 2)
   }
-  var search = function(nums, target) {
+  let search = function(nums, target) {
     if (nums.length === 0) return false
     if (nums.length === 1) return nums[0] === target
     // 补丁，主要针对重复数字出现在头尾的情况
@@ -22,7 +22,7 @@
     return biSearch(nums, start, end, target)
   }
   // biSearch只修改了返回值类型
-  var biSearch = function(nums, start, end, target) {
+  let biSearch = function(nums, start, end, target) {
     if (start === end - 1) {
       return nums[end] === target || nums[start] === target
     }
@@ -49,7 +49,7 @@
     }
   }
   let tester = require('../tester')
-  var testCases = [
+  let testCases = [
     {
       data: [[2, 5, 6, 0, 0, 1, 2], 3],
       res: false,
@@ -83,7 +83,7 @@
 }
 {
   // 其他人的解法，要简洁很多
-  var search = function(nums, target) {
+  let search = function(nums, target) {
     const len = nums.length
     if (len === 0) {
       return false

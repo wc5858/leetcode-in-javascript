@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var levelOrderBottom = function (root) {
+let levelOrderBottom = function (root) {
   if (root === null) return []
   let queue = [root]
   let ans = []

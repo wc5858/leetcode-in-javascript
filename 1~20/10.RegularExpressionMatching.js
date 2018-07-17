@@ -3,7 +3,7 @@
  * @param {string} p
  * @return {boolean}
  */
-// var isMatch = function (s, p) {
+// let isMatch = function (s, p) {
 //   let cursor = 0
 //   let last = ''
 //   for (let i = 0; i < p.length; i++) {
@@ -56,7 +56,7 @@
 // console.log(isMatch('a', '.*..a*'))
 // // console.log(isMatch('aaa', 'ab*a*c*a'))
 
-// var isMatch = function (s, p) {
+// let isMatch = function (s, p) {
 //   let cursor = s.length - 1
 //   console.log(cursor)
 //   for (let j = p.length - 1; j >= 0; j--) {
@@ -119,7 +119,7 @@
 // I tried but failed
 //
 // transform the solution's java to js
-// var isMatch = function (s, p) {
+// let isMatch = function (s, p) {
 //   if (p.length === 0) return s.length === 0
 //   let firstMatch = (s.length !== 0 && (p[0] == s[0] || p[0] == '.'))
 
@@ -135,7 +135,7 @@
 // using dynamic programming to cache
 let cache;
 
-var isMatch = function (s, p) {
+let isMatch = function (s, p) {
   cache = new Array(s.length + 1);
   return dp(0, 0, s, p);
 };

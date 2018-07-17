@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var subsets = function(nums) {
+let subsets = function(nums) {
   let ans = [[]]
   let n = nums.length
   function cb(pre, cur) {

@@ -1,6 +1,6 @@
 {
   // 吸取62&63的经验后给出如下算法，beat 100%
-  var minPathSum = function(grid) {
+  let minPathSum = function(grid) {
     const m = grid.length,
       n = grid[0].length
     const paths = new Array(n).fill(0)

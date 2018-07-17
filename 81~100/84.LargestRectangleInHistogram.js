@@ -5,8 +5,8 @@
    */
   // 暴力破解，[0,0,0,0,0,0,0,0,2147483647]这个case过不去
   // 时间太长了
-  // var largestRectangleArea = function(heights) {
-  //   var record = []
+  // let largestRectangleArea = function(heights) {
+  //   let record = []
   //   let max = 0
   //   heights.push(0)
   //   for (let i = 0; i < heights.length; i++) {
@@ -22,8 +22,8 @@
   // }
   // 用map改进了下 然而：Runtime: 9708 ms
   // 真是给悲伤的故事
-  var largestRectangleArea = function(heights) {
-    var record = new Map()
+  let largestRectangleArea = function(heights) {
+    let record = new Map()
     let max = 0
     heights.push(0)
     // 不过我发现我想到的heights.push(0)这个技巧别人也有用到~
@@ -48,7 +48,7 @@
   }
 
   let tester = require('../tester')
-  var testCases = [
+  let testCases = [
     {
       data: [[2, 1, 5, 6, 2, 3]],
       res: 10,
@@ -74,7 +74,7 @@
 }
 {
   // 其他人的解法，用栈来处理
-  var largestRectangleArea = function(heights) {
+  let largestRectangleArea = function(heights) {
     const len = heights.length
     if (len === 0) {
       return 0

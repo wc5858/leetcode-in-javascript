@@ -1,4 +1,4 @@
-var groupAnagrams = function(strs) {
+let groupAnagrams = function(strs) {
   let res = {}
   let primeNumbers = {
     a: 2,

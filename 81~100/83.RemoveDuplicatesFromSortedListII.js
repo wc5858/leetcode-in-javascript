@@ -13,7 +13,7 @@ function ListNode(val) {
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function(head) {
+let deleteDuplicates = function(head) {
   if (!head) return head
   let p = new ListNode()
   p.next = head

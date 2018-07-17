@@ -4,7 +4,7 @@
  */
 // {
 //   // 跑第84/87个case的时候出错了，原因未查明
-// var sortColors = function(nums) {
+// let sortColors = function(nums) {
 //   let left = 0
 //   let right = nums.length - 1
 //   let count = 0

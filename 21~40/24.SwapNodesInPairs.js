@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var swapPairs = function(head) {
+let swapPairs = function(head) {
   if(!head) return null
   if(!head.next) return head
   let h = new ListNode(0)

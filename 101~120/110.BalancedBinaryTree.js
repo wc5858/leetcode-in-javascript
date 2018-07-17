@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isBalanced = function (root) {
+let isBalanced = function (root) {
   return false !== (function helper(node) {
     // helper在非平衡的情况下返回false，否则返回树的高度
     if (node === null) return 0

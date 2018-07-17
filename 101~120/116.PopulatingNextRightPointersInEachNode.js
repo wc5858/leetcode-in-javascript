@@ -11,7 +11,7 @@
  * @return {void} Do not return anything, modify tree in-place instead.
  */
 {
-  var connect = function (root) {
+  let connect = function (root) {
     if (root === null) return
     let temp = root
     while (temp) {
@@ -36,8 +36,8 @@
 }
 {
   // 这是别人的解法，很值得学习，利用了上一层已建立的链接关系
-  var connect = function (root) {
-    var cur = root, pre = root;
+  let connect = function (root) {
+    let cur = root, pre = root;
     while (pre) {
       cur = pre;
       while (cur) {

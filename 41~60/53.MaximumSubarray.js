@@ -4,7 +4,7 @@
  */
 {
   // 写的有点复杂了
-  var maxSubArray = function(nums) {
+  let maxSubArray = function(nums) {
     let sum = 0
     let flag = false
     let res = -Infinity
@@ -38,7 +38,7 @@
 }
 {
   //别人的版本
-  var maxSubArray = function(nums) {
+  let maxSubArray = function(nums) {
     let max = -Infinity,
       sum = 0
     for (let i = 0; i < nums.length; i++) {

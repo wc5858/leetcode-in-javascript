@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 {
-  var grayCode = function (n) {
+  let grayCode = function (n) {
     let res = [0]
     if (n === 0) return [0]
     let arr = new Array(n).fill(false)

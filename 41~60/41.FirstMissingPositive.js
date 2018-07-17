@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var firstMissingPositive = function(nums) {
+let firstMissingPositive = function(nums) {
   let len = nums.length
   for (let i = 0; i < len; i++) {
     if (nums[i] === i + 1) {

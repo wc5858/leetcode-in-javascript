@@ -10,7 +10,7 @@
  * @param {number} k
  * @return {ListNode}
  */
-var reverseKGroup = function(head, k) {
+let reverseKGroup = function(head, k) {
   if (head === null || head.next === null || k == 1) return head
   let h = new ListNode(0)
   let tail = h

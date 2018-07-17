@@ -1,4 +1,4 @@
-var rotate = function(matrix) {
+let rotate = function(matrix) {
   let n = matrix[0].length
   let i=0
   let j=n-1

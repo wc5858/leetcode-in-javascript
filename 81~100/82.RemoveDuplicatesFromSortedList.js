@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function(head) {
+let deleteDuplicates = function(head) {
   if(!head) return head
   let pre = head
   let cur = head.next

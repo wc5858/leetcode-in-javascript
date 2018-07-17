@@ -13,7 +13,7 @@ function TreeNode(val) {
  * @param {number[]} nums
  * @return {TreeNode}
  */
-var sortedArrayToBST = function (nums) {
+let sortedArrayToBST = function (nums) {
   return (function toTree(left, right) {
     if (left > right) return null
     let mid = Math.floor((left + right) / 2)
