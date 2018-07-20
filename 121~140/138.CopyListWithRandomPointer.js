@@ -43,3 +43,4 @@ var copyRandomList = function(head) {
   }
   return node
 }
+// 另一种解法是先讲拷贝节点和旧节点先交织在一起，从而利用这一点复制random，再分离新旧节点
