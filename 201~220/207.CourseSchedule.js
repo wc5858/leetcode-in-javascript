@@ -28,7 +28,7 @@
   }
 }
 {
-  // 这个解法通过创建临街矩阵，将时间复杂度优化到O(n^2)
+  // 这个解法通过创建临接矩阵，将时间复杂度优化到O(n^2)
   let helper = function(n, record, adj) {
     if (record[n] == 1) return false
     if (record[n] == 2) return true
