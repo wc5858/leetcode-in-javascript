@@ -7,10 +7,10 @@ var combinationSum3 = function (k, n) {
   if (n >= k * 9) return []
   let ans = []
   function helper(k, n, data, limit) {
-    if (n >= k * 9) return
-    if (k === 1) {
+    if (k === 1 && n < 10) {
       ans.push([...data, n])
     } else {
+      if (n >= k * 9) return
       let max = Math.min(Math.ceil(n / k), 10)
       for (let i = limit; i < max; i++) {
         data.push(i)
