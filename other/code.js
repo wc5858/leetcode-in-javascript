@@ -70,3 +70,8 @@ console.log(encode(test1))
 console.log(encode(test2))
 console.log(decode(encode(test1)))
 console.log(decode(encode(test2)))
+
+
+
+const res = data.result;
+let ietm = res ? res.data[0]:'...'
